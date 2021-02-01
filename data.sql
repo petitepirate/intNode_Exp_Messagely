@@ -1,3 +1,12 @@
+DROP DATABASE IF EXISTS messagely_test;
+
+CREATE DATABASE messagely_test;
+
+\c messagely_test;
+
+DROP TABLE IF EXISTS users CASCADE;
+DROP TABLE IF EXISTS messages;
+
 CREATE TABLE users (
     username text PRIMARY KEY,
     password text NOT NULL,
